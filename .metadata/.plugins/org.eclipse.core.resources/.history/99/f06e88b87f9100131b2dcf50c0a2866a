@@ -1,0 +1,39 @@
+package de.flaxxy.pokegame;
+
+import java.awt.Graphics;
+
+public class Entity {
+	public int x,y;
+	public float progress;
+	public Direction dir;
+	public boolean moving;
+	public Entity()
+	{
+		
+	}
+	public void update(float delta)
+	{
+		
+	}
+	public final void paint(Graphics g)
+	{
+		switch(dir)
+		{
+		case NORTH:
+			draw(g,x,y-progress*Main.tileHeight);
+			break;
+		case SOUTH:
+			draw(g,x,y+progress*Main.tileHeight);
+			break;
+		case WEST:
+			draw(g,x-progress,y*Main.tileWidth);
+			break;
+		case EAST:
+			draw(g,x+progress,y*Main.tileWidth);
+		}
+	}
+	public void draw(Graphics g, float x, float y)
+	{
+		
+	}
+}

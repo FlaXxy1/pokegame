@@ -1,0 +1,40 @@
+package de.flaxxy.pokegame;
+
+import java.awt.Graphics;
+import java.nio.channels.SelectableChannel;
+
+public class Entity {
+	public int x,y;
+	public float progress;
+	public Direction dir;
+	public Entity()
+	{
+		
+	}
+	public void update(float delta)
+	{
+		
+	}
+	public final void paint(Graphics g)
+	{
+		switch(dir)
+		{
+		case NORTH:
+			draw(g,x,y-progress);
+			break;
+		case SOUTH:
+			draw(g,x,y+progress);
+			break;
+		case WEST:
+			draw(g,x-progress,y);
+			break;
+		case EAST:
+			draw(g,x+progress,y);
+			break;
+		}
+	}
+	public void draw(Graphics g, float x, float y)
+	{
+		
+	}
+}

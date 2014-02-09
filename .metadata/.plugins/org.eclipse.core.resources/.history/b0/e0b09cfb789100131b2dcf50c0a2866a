@@ -1,0 +1,30 @@
+package de.flaxxy.pokegame;
+
+import javax.swing.JFrame;
+
+public class Main {
+	GameFrame window;
+	boolean isRunning;
+	public static void main(String[] args) {
+		new Main();
+	}
+	public Main()
+	{
+		window=new GameFrame("PokeGame");
+		init();
+		gameLoop();
+	}
+	private void init()
+	{
+		isRunning=true;
+	}
+	private void gameLoop()
+	{
+		
+		while(isRunning)
+		{
+			
+			
+		}
+	}
+}

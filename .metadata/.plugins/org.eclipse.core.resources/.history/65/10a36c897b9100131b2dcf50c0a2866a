@@ -1,0 +1,49 @@
+package de.flaxxy.pokegame;
+
+import java.awt.Graphics;
+import java.awt.Graphics2D;
+
+import javax.swing.JFrame;
+
+public class Main {
+	GameFrame window;
+	boolean isRunning;
+	public static void main(String[] args) {
+		new Main();
+	}
+	public Main()
+	{
+		
+		init();
+		gameLoop();
+	}
+	private void init()
+	{
+		isRunning=true;
+		window=new GameFrame("PokeGame");
+	}
+	private void gameLoop()
+	{
+		long lastTime=System.currentTimeMillis();
+		while(isRunning)
+		{
+			long delta=System.currentTimeMillis()-lastTime;
+			lastTime=System.currentTimeMillis();
+			update(delta/1000f);
+			Graphics2D g2d=(Graphics2D)(window.getBufferStrategy().getDrawGraphics());
+			g2d.fillRect(0, 0, window.getWidth(), window.getHeight());
+			paint(g2d);
+			g2d.dispose();
+			window.getBufferStrategy().show();
+			Thread.sleep();
+		}
+	}
+	private void update(float delta)
+	{
+		
+	}
+	private void paint(Graphics2D g)
+	{
+		
+	}
+}

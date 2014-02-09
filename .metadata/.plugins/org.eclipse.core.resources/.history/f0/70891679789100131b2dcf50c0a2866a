@@ -1,0 +1,16 @@
+package de.flaxxy.pokegame;
+
+import java.awt.Graphics;
+
+import javax.swing.JFrame;
+
+public class GameFrame extends JFrame {
+
+	public GameFrame(String title)
+	{
+		super(title);
+		createBufferStrategy(2);
+		setIgnoreRepaint(true);
+	}
+	
+}

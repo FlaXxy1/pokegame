@@ -1,0 +1,12 @@
+package de.flaxxy.pokegame;
+
+import javax.swing.JFrame;
+
+public class GameFrame extends JFrame {
+
+	public GameFrame(String title)
+	{
+		super(title);
+	}
+	
+}

@@ -1,0 +1,14 @@
+package de.flaxxy.pokegame;
+
+public class Entity {
+	public int x,y;
+	public float progress;
+	public Entity()
+	{
+		
+	}
+	public void draw(Graphics g)
+	{
+		
+	}
+}

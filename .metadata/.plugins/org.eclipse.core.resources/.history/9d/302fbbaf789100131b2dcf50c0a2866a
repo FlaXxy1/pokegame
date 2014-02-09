@@ -1,0 +1,19 @@
+package de.flaxxy.pokegame;
+
+import javax.swing.JFrame;
+
+public class Main {
+	GameFrame window;
+	public static void main(String[] args) {
+		new Main();
+	}
+	public Main()
+	{
+		window=new GameFrame("PokeGame");
+		init();
+	}
+	public void init()
+	{
+		
+	}
+}
